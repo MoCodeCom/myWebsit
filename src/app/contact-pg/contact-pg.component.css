@@ -1,0 +1,21 @@
+#container{
+    background-color: transparent;
+    font-family: monospace;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+#about-container{
+    
+    text-align: center;
+    margin: 2px;
+    background-color: transparent;
+    height: 700px;
+
+}
+
+#box{
+    width: 70%;
+    height: 150px;
+    background-color: rgb(226, 43, 186);
+}

@@ -1,130 +1,23 @@
 #container{
-    background-color: #F9E79F;
-    border: solid 3px black;
+    background-color: transparent;
     font-family: monospace;
-}
-
-#color-btn-container{
-    position: absolute;
-    margin-top: 100px;
-}
-
-#color-btn-container ul{
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#color-btn-container #color_1{
-    background-color: #AEA4F9;
-    border-radius: 50px;
-    border: solid 2px black;
-    width: 20px;
-    height: 20px;
-}
-
-
-#color-btn-container #color_2{
-    background-color: #EB9CD9;
-    border-radius: 50px;
-    border: solid 2px black;
-    width: 20px;
-    height: 20px;
-}
-
-#color-btn-container #color_3{
-    background-color: #B2EB9C;
-    border-radius: 50px;
-    border: solid 2px black;
-    width: 20px;
-    height: 20px;
-}
-
-#color_1:hover{
-    cursor: pointer;
-}
-
-#color_2:hover{
-    cursor: pointer;
-}
-
-#color_3:hover{
-    cursor: pointer;
+    overflow: unset;
 }
 
 #Home-container{
     text-align: center;
-    margin: 2px;
+    margin: 0px;
     background-color: transparent;
-    
-}
-#nav{
-    display: flex;
-    justify-content: space-between;
-}
-#sm-bar ul{
-    display: flex;
-    direction:ltr;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-#sm-bar ul li{
-    margin-left: 15px;
-}
-
-#sm-bar ul li img{
-    width: 60px;
-    padding: 0px;
-}
-
-#sm-bar ul li img:hover{
-    background-color: whitesmoke;
-    cursor: pointer;
-    border-radius: 50px;
-    padding: 0px;
-}
-
-
-#nav-bar ul{
-    display: flex;
-    direction:rtl;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-#nav-bar ul li{
-    margin-left: 30px;
-    font-family: 'monospace','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: lighter;
-    z-index: 3;
-}
-
-#nav-bar ul li div{
-    position: absolute;
-    width: 60px;
-    height: 20px;
-    background-color: #F2F3F4;
-    rotate: 20deg;
-    visibility: hidden;
-    z-index: -1;
-
-}
-
-#nav-bar ul li:hover{
-    cursor:pointer;
-}
-
-#nav-bar ul li:hover div{
-    visibility: unset;
+    height: auto;
 }
 
 #img_1{
+    position: relative;
     margin-top: 50px;
     border: solid 10px black;
     width: 400px;
     background-color: transparent;
+    
 }
 
 
@@ -174,14 +67,9 @@
     border-radius: 30px;
 }
 
+/*------------------- cloud ----------------*/
 
 
-/*---------------------- about page ------------------------*/
-#about-container{
-    height: 500px;
-    background-color: initial;
-    border-top: solid 3px black;
-}
 
 /*---------------------- responsive page -------------------*/
 
@@ -241,7 +129,8 @@
 
 @media only screen and (max-width:1020px) {
     #content-2-home-container {
-        margin: 150px 0px auto 60%;
+        top:150px;
+        margin: 0px 0px auto 60%;
     }
 
     #content-2-home-container p{
@@ -262,7 +151,8 @@
 
     #content-2-home-container {
         position:relative;
-        margin: 415px 0px auto 50%;
+        top:390px;
+        margin: 0px 0px auto 50%;
     }
 
     #content-2-home-container h1{
@@ -274,40 +164,16 @@
     #content-2-home-container p{
         display: none;
     }
-
-    #nav{
-        display:initial;
-        text-align: center;
-        justify-content:center;
-
-    }
-
-
-    #nav-bar ul{
-        direction: initial;
-        display: flex;
-        margin-left: 0px;
-        justify-content:space-around;
-        padding: 0px;
-    }
-    
-
-    #sm-bar ul{
-        direction: initial;
-        display: flex;
-        margin-left: 0px;
-        justify-content:space-around;
-        padding: 0px;
-    }
-
-    #color-btn-container{
-        display: none;
-    }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:750px) {
     #content-2-home-container {
         position:relative;
-        margin: 415px 0px auto 10%;
+        top:415px;
+        margin: 0px 0px auto 4%;
+    }
+
+    #content-2-home-container h1{
+        font-size: small;
     }
 }

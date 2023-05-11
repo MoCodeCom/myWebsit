@@ -1,0 +1,61 @@
+#container{
+    background-color: transparent;
+    font-family: monospace;
+    padding-right: 80px;
+    padding-left: 80px;
+    position: inherit;
+}
+
+#content_1{
+
+    text-align: center;
+    margin: 100px 10% 20px 10%;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 5px black;
+    background-color: beige;
+    border-radius: 30px;
+    position: relative;
+    
+}
+
+#content_1 h3{
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width:1850px) {
+    #content_1 h3{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    #container{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #content_1{
+        border: solid 3px black;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #content_1 h3{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+
+    #content_1{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+  
+  
